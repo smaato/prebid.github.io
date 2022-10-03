@@ -118,6 +118,51 @@ var adUnit = {
     }]
 };
 ```
+
+#### Example Native Ad Unit
+
+```javascript
+var adUnit = {
+    "code": "native unit",
+    "mediaTypes": {
+        native: {
+            sendTargetingKeys: false,
+            image: {
+                required: true,
+                sizes: [150, 50]
+            },
+            icon: {
+                required: true,
+                sizes: [50, 50]
+            },
+            title: {
+                required: true,
+                len: 80
+            },
+            sponsoredBy: {
+                required: true
+            },
+            body: {
+                required: true
+            },
+            cta: {
+                required: false
+            },
+            rating: {
+                required: false
+            }
+        }
+    },
+    "bids": [{
+        "bidder": "smaato",
+        "params": {
+            "publisherId": "1100012345",
+            "adspaceId": "11002234"
+        }
+    }]
+};
+```
+
 #### Example AdPod (long-form) Video Ad Unit
 
 ```javascript
